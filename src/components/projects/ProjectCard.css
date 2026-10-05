@@ -1,0 +1,202 @@
+.project-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8ef;
+  border-radius: 20px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 50px rgba(70, 77, 208, 0.10);
+}
+
+
+/* Image */
+
+.project-image-wrapper {
+  width: 100%;
+  height: 280px;
+
+  overflow: hidden;
+
+  background: #f2f2f8;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.03);
+}
+
+
+/* Content */
+
+.project-content {
+  padding: 28px;
+}
+
+
+/* Categories */
+
+.project-categories {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+
+  margin-bottom: 15px;
+}
+
+.project-categories span {
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  background: #f1f0ff;
+
+  color: #464dd0;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* Title */
+
+.project-content h3 {
+  margin-bottom: 10px;
+
+  font-size: 25px;
+  letter-spacing: -0.5px;
+}
+
+
+/* Description */
+
+.project-description {
+  color: #686875;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+
+/* Details */
+
+.project-details {
+  padding-top: 20px;
+  margin-top: 20px;
+
+  border-top: 1px solid #eeeeF3;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  animation: detailsIn 0.25s ease;
+}
+
+@keyframes detailsIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-details h4 {
+  margin-bottom: 8px;
+
+  font-size: 13px;
+  color: #17172b;
+}
+
+.project-details p {
+  color: #686875;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* Technologies */
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.technology-list span {
+  padding: 6px 10px;
+
+  background: #f7f7fa;
+
+  border-radius: 5px;
+
+  color: #555562;
+
+  font-size: 11px;
+}
+
+
+/* Links */
+
+.project-links {
+  display: flex;
+  gap: 20px;
+}
+
+.project-links a {
+  color: #464dd0;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  color: #9800f0;
+}
+
+
+/* View Details */
+
+.details-btn {
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #464dd0;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  color: #9800f0;
+}
