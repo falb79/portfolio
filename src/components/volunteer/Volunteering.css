@@ -1,0 +1,307 @@
+.volunteering-section {
+  background: #ffffff;
+  padding: 120px 7%;
+  color: #17172b;
+}
+
+.volunteering-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.volunteering-heading {
+  margin-bottom: 70px;
+}
+
+.section-label {
+  display: inline-block;
+
+  color: #464dd0;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+.volunteering-heading h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+.volunteering-heading h2 span {
+  color: #464dd0;
+}
+
+.volunteering-heading p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: #707080;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   TIMELINE WRAPPER
+========================= */
+
+.volunteering-timeline-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  padding: 15px 5px 30px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #d8d8e5 transparent;
+}
+
+.volunteering-timeline-wrapper::-webkit-scrollbar {
+  height: 5px;
+}
+
+.volunteering-timeline-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.volunteering-timeline-wrapper::-webkit-scrollbar-thumb {
+  background: #d8d8e5;
+
+  border-radius: 20px;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.volunteering-timeline {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 45px;
+
+  min-width: 1050px;
+
+  padding-top: 5px;
+}
+
+
+/* Horizontal line */
+
+.timeline-line {
+  position: absolute;
+
+  top: 78px;
+
+  left: 55px;
+  right: 55px;
+
+  height: 1px;
+
+  background: #dedee8;
+
+  z-index: 0;
+}
+
+
+/* =========================
+   VOLUNTEER ITEM
+========================= */
+
+.volunteer-item {
+  position: relative;
+
+  z-index: 1;
+
+  text-align: center;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.volunteer-logo {
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 0.3px solid #e4e4ec;
+
+  border-radius: 50%;
+
+  box-shadow: 0 5px 18px rgba(30, 30, 70, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.volunteer-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  border-radius: 50%;
+}
+
+.volunteer-item:hover .volunteer-logo {
+  transform: translateY(-3px);
+
+  border-color: #464dd0;
+
+  box-shadow:
+    0 8px 25px rgba(70, 77, 208, 0.12);
+}
+
+
+/* =========================
+   DOT
+========================= */
+
+.volunteer-dot {
+  position: relative;
+
+  width: 11px;
+  height: 11px;
+
+  margin: 0 auto 24px;
+
+  background: #ffffff;
+
+  border: 2px solid #464dd0;
+
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 5px #f0efff;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.volunteer-content {
+  padding: 0 5px;
+}
+
+.volunteer-period {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #9999a6;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.volunteer-content h3 {
+  margin: 0 0 6px;
+
+  color: #17172b;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+.volunteer-content h4 {
+  margin: 0 0 14px;
+
+  color: #464dd0;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.volunteer-content p {
+  max-width: 240px;
+
+  margin: 0 auto;
+
+  color: #707080;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   PREVIOUS ROLE
+========================= */
+
+.previous-role {
+  display: block;
+
+  max-width: 230px;
+
+  margin: 12px auto 0;
+
+  color: #9999a6;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .volunteering-section {
+    padding: 85px 20px;
+  }
+
+  .volunteering-heading {
+    margin-bottom: 50px;
+  }
+
+  .volunteering-heading h2 {
+    font-size: 2.7rem;
+  }
+
+  .volunteering-timeline {
+    min-width: 900px;
+
+    gap: 35px;
+  }
+
+  .volunteer-content h3 {
+    font-size: 16px;
+  }
+
+}

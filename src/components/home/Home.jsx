@@ -45,11 +45,6 @@ return (
 
           <div className="profile-card">
 
-            <div className="profile-top">
-              <span className="status-dot"></span>
-              <span>Available for opportunities</span>
-            </div>
-
             <div className="logo-container">
               <img src={logo} alt="Fatima Lajam" />
             </div>
@@ -63,16 +58,6 @@ return (
               <span>Backend</span>
             </div>
 
-          </div>
-
-          <div className="floating-card card-one">
-            <strong>03+</strong>
-            <span>Featured Projects</span>
-          </div>
-
-          <div className="floating-card card-two">
-            <strong>CS</strong>
-            <span>Graduate</span>
           </div>
 
         </div>
