@@ -2,7 +2,7 @@ import "./Volunteering.css";
 
 import gdgLogo from "../../assets/uj_logo.jpg";
 import riotLogo from "../../assets/riot.png";
-import smailLogo from "../../assets/smail_logo.png";
+import smailLogo from "../../assets/Smail_logo.png";
 import fakhrLogo from "../../assets/fakhr.jpg";
 
 const volunteering = [

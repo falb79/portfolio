@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Experience.css";
 
-import aquatLogo from "../../assets/aquat-logo.png";
+import aquatLogo from "../../assets/Aquat-logo.png";
 
 function Experience() {
   const [showDetails, setShowDetails] = useState(false);
