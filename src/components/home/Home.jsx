@@ -1,10 +1,10 @@
+
 import React from 'react'
 import './home.css'
 import CV from '../../assets/cv.pdf'
-import logo from '../../assets/logo.svg'
 
 function Home() {
-return (
+  return (
     <section className="hero" id="home">
       <div className="hero-container">
 
@@ -25,41 +25,17 @@ return (
           <div className="hero-buttons">
             <a href="#contact" className="hero-btn primary-btn">
               Contact Me
-              <span>→</span>
+              <span>➤</span>
             </a>
-
-          <a
-            href={CV}
-            className="hero-btn secondary-btn"
-            download
-          >
-            Download CV
-            <span>↓</span>
-          </a>
           </div>
         </div>
 
-        <div className="hero-visual">
-
-          <div className="visual-circle"></div>
-
-          <div className="profile-card">
-
-            <div className="logo-container">
-              <img src={logo} alt="Fatima Lajam" />
-            </div>
-
-            <h3>Fatima Lajam</h3>
-            <p>Computer Science</p>
-
-            <div className="profile-tags">
-              <span>React</span>
-              <span>JavaScript</span>
-              <span>Backend</span>
-            </div>
-
+        <div className="hero-visual" aria-hidden="true">
+          <div className="visual-orb">
+            <div className="orb-shape orb-shape-one"></div>
+            <div className="orb-shape orb-shape-two"></div>
+            <div className="orb-shape orb-shape-three"></div>
           </div>
-
         </div>
 
       </div>

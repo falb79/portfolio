@@ -52,15 +52,22 @@ function ProjectCard({ project }) {
               </div>
             </div>
 
+            
+         
             <div className="project-links">
-              <a href={project.github} target="_blank">
-                GitHub ↗
-              </a>
-
-              <a href={project.demo} target="_blank">
-                Presentation ↗
-              </a>
+              {project.links.map((link) => (
+                <a
+                  key={link.type}
+                  href={link.url}
+                  className={`project-btn ${link.type}-btn`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
+
 
           </div>
         )}

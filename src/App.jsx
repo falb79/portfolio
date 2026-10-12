@@ -5,7 +5,6 @@ import Nav from './components/nav/Nav'
 import Projects from './components/projects/Projects'
 import Experience from './components/experience/Experience'
 import Volunteering from "./components/volunteer/Volunteering";
-
 function App() {
 
   return (

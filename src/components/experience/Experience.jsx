@@ -44,7 +44,7 @@ function Experience() {
               </div>
 
               <div className="experience-date">
-                2026
+                2 Months
               </div>
             </div>
 

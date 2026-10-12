@@ -200,3 +200,53 @@
 .details-btn:hover {
   color: #9800f0;
 }
+
+
+
+/* -------------- */
+
+
+.project-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+}
+
+.github-btn {
+  background: #f0e8ff;
+  color: #6f19b5;
+  margin-bottom: 10px;
+}
+
+.demo-btn {
+  background: #f0e8ff;
+  color: #6f19b5;
+  margin-bottom: 10px;
+
+}
+
+.design-btn {
+background: #f0e8ff;
+color: #6f19b5;
+margin-bottom: 10px;
+
+}
